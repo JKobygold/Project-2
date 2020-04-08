@@ -1,8 +1,22 @@
+
+
+
 .list-group-item {
   line-height: 2.5;
 }
 
 
-#root{
+.Application_pageContent__3PrU9{
   float: right;
+  margin-top: 100px;
+  margin-right: 50px;
+
+}
+
+
+.box-1{
+  margin-top: 100px;
+  /* margin-right: 10px; */
+  border: 2px black solid;
+  padding: 5px;
 }
