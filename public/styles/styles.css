@@ -25,7 +25,7 @@ h1{
 }
 
 .box-1{
-  margin-left: 200px;
+  margin-left: 150px;
   /* margin-top: 10px; */
   margin-bottom: 10px;
   /* margin-right: 10px; */
@@ -37,3 +37,36 @@ h1{
  -webkit-text-stroke-color: white;
 }
 
+@media only screen and (max-width: 640px){
+  #masthead {
+    /* Positioning */
+    position: static;
+    margin-bottom: 20px;
+  }
+  header .container {
+    padding: 0;
+  }
+  main.container {
+    padding-top: 0;
+  }
+  #logo,
+  .work,
+  .auth-image {
+    width: 100%;
+  }
+  nav {
+    /* Box-model */
+    width: 100%;
+    /* Positioning */
+    margin: 15px 0;
+    /* Typography */
+    text-align: center;
+  }
+  nav a {
+    /* Box-model */
+    width: 30%;
+    padding-left: 0;
+    /* Positioning */
+    margin-left: 0;
+  }
+}
