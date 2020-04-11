@@ -29,12 +29,10 @@
 
         <h1>{{msg}}</h1>  
         <div class="jumbotron jumbotron-fluid">
-          <div class="container">
             <h2 class="display-4">Pandemic portal</h2>
             {{!-- <p class="lead">it sucks...</p> --}}
           </div>
-        </div>
-        <div class="text-box">
+        {{!-- <div class="text-box">
           <form class="clearfix mb-4" action="POST">
             <div class="form-group">
               <label for="example-text">Example Text</label>
@@ -48,7 +46,7 @@
             </div>
             <button id="submit" class="btn btn-primary float-right">Submit</button>
           </form>
-        </div>
+        </div> --}}
         <div class="box-1">
           <form>
             <div class="form-group">
@@ -64,14 +62,15 @@
           </form>
         </div>
 
-        <iframe width="450" height="235" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        <iframe width="450" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
           title="2019-nCoV"
           src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light">
         </iframe>
         {{!-- {{ The above module was created by John's hopkins university. For more information please visit the following address: https://coronavirus.jhu.edu/map.html}} --}}
         {{!-- <h3>Examples:</h3> --}}
+      <div class="box-2">
 
-       <ul id="example-list" class="list-group">
+       <ul id="example-list" class="list-group" style="width: 500px; height: 500px; overflow: auto">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
             <a href="example/{{this.id}}">{{this.text}}</a>
@@ -86,6 +85,7 @@
           </li>
           {{/each}}
         </ul> 
+      </div>
       </div>
     </div>
   </div>
