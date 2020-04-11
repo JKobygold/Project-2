@@ -1,12 +1,27 @@
 var db = require("../models");
+const axios = require('axios');
+
+async function getNyTimesTopStories() {
+  try {
+    const response = await axios.get("https://api.nytimes.com/svc/topstories/v2/world.json?api-key=EFrSMOkn5IJ3i2V2bk1irq3plcwbIgae");
+    return (response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+
 
 module.exports = function(app) {
   // Load index page
-  app.get("/", function(req, res) {
+  app.get("/", async function(req, res) {
+    var nyt = await getNyTimesTopStories();
+    console.log(nyt);
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
         msg: "WASH YOUR HANDS",
-        examples: dbExamples
+        examples: dbExamples,
+        articles: nyt.data.results,
       });
     });
   });

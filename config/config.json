@@ -1,23 +1,15 @@
 {
   "development": {
     "username": "root",
-
-    
-
     "password": "rootroot",
-
-    "database": "exampledb",
+    "database": "pandemicdb",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-
-    
-
     "password": "rootroot",
-
-    "database": "testdb",
+    "database": "coviddb",
     "host": "localhost",
     "dialect": "mysql",
     "logging": false
