@@ -1,10 +1,25 @@
+.navbar{
+  background-color: slategray;
+  color: white;
+}
+
 #home{
   background-color:#2a2b2e;
 }
+
+html{
+  background-color:#2a2b2e;
+}
 h1{
- color: #052480;
+  text-align: center;
+  color: #052480;
  -webkit-text-stroke-width: .5px;
  -webkit-text-stroke-color: white;
+}
+
+h2{
+  text-align: center;
+  
 }
 .list-group-item {
   line-height: 2.5;
@@ -17,7 +32,6 @@ h1{
   margin-right: 50px;
 
 }
-
 .text-box{
   border: 2px black dotted;
   padding: 10px;
@@ -25,11 +39,16 @@ h1{
 }
 
 .box-1{
+<<<<<<< HEAD
   margin-left: 150px;
+=======
+  margin-left: 225px;
+  margin-right: 10px;
+>>>>>>> 420e5e9217472c35cd161d9f60d716eb13dec8d1
   /* margin-top: 10px; */
   margin-bottom: 10px;
   /* margin-right: 10px; */
-  border: 2px black dotted;
+  border: 2px white dotted;
   padding: 10px;
   float: right;
   color: #052480;
@@ -37,6 +56,7 @@ h1{
  -webkit-text-stroke-color: white;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 640px){
   #masthead {
     /* Positioning */
@@ -70,3 +90,8 @@ h1{
     margin-left: 0;
   }
 }
+=======
+iframe{
+  border: 2px white dotted;
+}
+>>>>>>> 420e5e9217472c35cd161d9f60d716eb13dec8d1
