@@ -21,6 +21,8 @@ h2{
   text-align: center;
   
 }
+
+
 .list-group-item {
   line-height: 2.5;
 }
@@ -36,10 +38,10 @@ h2{
   margin-bottom: 10px;
   margin-left: 80px;
   border: 2px white dotted;
-  padding-top: 10px;
-  padding-right: 10px;
+  padding-top: 15px;
+  padding-right: 15px;
   padding-bottom: 0px;
-  padding-left: 10px;
+  padding-left: 15px;
    float: left;
   color: #052480;
   -webkit-text-stroke-width: .5px;
@@ -48,13 +50,13 @@ h2{
 
 
 .box-1{
-  margin-left: 90px;
-  margin-right: 10px;
-  /* margin-top: 10px; */
+  margin-right: 225px;
+    /* margin-top: 10px; */
   margin-bottom: 10px;
   /* margin-right: 10px; */
   border: 2px white dotted;
   padding: 15px;
+  padding-bottom: 25px;
   float: right;
   color: #052480;
   -webkit-text-stroke-width: .5px;
@@ -62,8 +64,8 @@ h2{
 }
 
 iframe{
-  border: 2px white dotted;
-  margin-left: 200px;
+  border: solid 2px black;
+ margin-left: 150px;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 640px){
@@ -99,7 +101,6 @@ nav a {
   margin-left: 0;
 }
 }
-
-#example-list{
-  background-color: slategray;
+.box-2{
+  margin-left: 120px;
 }
