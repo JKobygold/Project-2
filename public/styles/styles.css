@@ -50,14 +50,11 @@ h2{
 
 
 .box-1{
-<<<<<<< HEAD
   margin-left: 225px;
   margin-right: 10px;
   /* margin-top: 10px; */
-=======
   margin-right: 225px;
     /* margin-top: 10px; */
->>>>>>> f74cb2527e1571715a89565d1826953d92ff6e21
   margin-bottom: 10px;
   /* margin-right: 10px; */
   border: 2px white dotted;
@@ -73,7 +70,11 @@ iframe{
   border: solid 2px black;
  margin-left: 150px;
   margin-bottom: 20px;
-}
+    position: center;
+    top: 0%;
+
+  }
+
 @media only screen and (max-width: 640px){
 #masthead {
   /* Positioning */
@@ -107,12 +108,12 @@ nav a {
   margin-left: 0;
 }
 }
-<<<<<<< HEAD
+
 .container .jumbotron {
   border-radius: 60px ;
   background-color: #78617a;
-=======
+}
+
 .box-2{
   margin-left: 120px;
->>>>>>> f74cb2527e1571715a89565d1826953d92ff6e21
 }

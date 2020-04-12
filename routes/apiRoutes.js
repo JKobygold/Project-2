@@ -1,5 +1,5 @@
 var db = require("../models");
-var PluginManager = require("covid19-api")
+// var PluginManager = require("covid19-api");
 
 module.exports = function (app) {
   // Get all examples
@@ -32,9 +32,9 @@ module.exports = function (app) {
 //https://www.npmjs.com/package/covid19-api#pluginmanagergetsituationreports
 //trying to put documentation for covid19-api npm in please move if you find correct, or a better, location for it 
 
-PluginManager.getJohnsHopkinsDataDailyReport().then(res => {
-  console.log(res);
-})
+// PluginManager.getJohnsHopkinsDataDailyReport().then(res => {
+//   console.log(res);
+// });
   
     // { 
     //   table: [
