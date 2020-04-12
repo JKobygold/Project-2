@@ -1,11 +1,13 @@
 -- DROP DATABASE IF EXISTS Exampledb;
 -- CREATE DATABASE Exampledb;
 
--- DROP DATABASE IF EXISTS testdb;
+
 -- CREATE DATABASE testdb;
 
-### Schema
+-- ### Schema
 
+
+DROP DATABASE IF EXISTS Pandemicplannerdb;
 CREATE DATABASE Pandemicplannerdb;
 USE Pandemicplannerdb;
 
@@ -13,6 +15,6 @@ CREATE TABLE pplanner
 (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(255) NOT NULL,
-	cabin-fever BOOLEAN DEFAULT false,
+	cabinfever BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
