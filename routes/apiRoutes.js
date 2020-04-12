@@ -1,5 +1,6 @@
 var db = require("../models");
-var PluginManager = require("covid19-api")
+
+var PluginManager = require("covid19-api");
 var walmart = require('walmart')(apiKey);
 //npm pluginmanager package information at https://www.npmjs.com/package/covid19-api#pluginmanagergetsituationreports 
 //add syntax as it appears in above link to use that api key
@@ -7,6 +8,7 @@ var walmart = require('walmart')(apiKey);
 
 // to install covid19-api npm package:    % npm i covid19-api 
 // to install walmart npm package:        % npm install walmart --save
+
 
 module.exports = function (app) {
   // Get all examples
@@ -39,9 +41,9 @@ module.exports = function (app) {
 //https://www.npmjs.com/package/covid19-api#pluginmanagergetsituationreports
 //trying to put documentation for covid19-api npm in please move if you find correct, or a better, location for it 
 
-PluginManager.getJohnsHopkinsDataDailyReport().then(res => {
-  console.log(res);
-})
+// PluginManager.getJohnsHopkinsDataDailyReport().then(res => {
+//   console.log(res);
+// });
   
     // { 
     //   table: [

@@ -50,6 +50,9 @@ h2{
 
 
 .box-1{
+  margin-left: 225px;
+  margin-right: 10px;
+  /* margin-top: 10px; */
   margin-right: 225px;
     /* margin-top: 10px; */
   margin-bottom: 10px;
@@ -67,7 +70,11 @@ iframe{
   border: solid 2px black;
  margin-left: 150px;
   margin-bottom: 20px;
-}
+    position: center;
+    top: 0%;
+
+  }
+
 @media only screen and (max-width: 640px){
 #masthead {
   /* Positioning */
@@ -101,6 +108,12 @@ nav a {
   margin-left: 0;
 }
 }
+
+.container .jumbotron {
+  border-radius: 60px ;
+  background-color: #78617a;
+}
+
 .box-2{
   margin-left: 120px;
 }
