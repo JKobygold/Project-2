@@ -39,12 +39,8 @@ h2{
 }
 
 .box-1{
-<<<<<<< HEAD
-  margin-left: 150px;
-=======
   margin-left: 225px;
   margin-right: 10px;
->>>>>>> 420e5e9217472c35cd161d9f60d716eb13dec8d1
   /* margin-top: 10px; */
   margin-bottom: 10px;
   /* margin-right: 10px; */
@@ -56,42 +52,10 @@ h2{
  -webkit-text-stroke-color: white;
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 640px){
-  #masthead {
-    /* Positioning */
-    position: static;
-    margin-bottom: 20px;
-  }
-  header .container {
-    padding: 0;
-  }
-  main.container {
-    padding-top: 0;
-  }
-  #logo,
-  .work,
-  .auth-image {
-    width: 100%;
-  }
-  nav {
-    /* Box-model */
-    width: 100%;
-    /* Positioning */
-    margin: 15px 0;
-    /* Typography */
-    text-align: center;
-  }
-  nav a {
-    /* Box-model */
-    width: 30%;
-    padding-left: 0;
-    /* Positioning */
-    margin-left: 0;
-  }
-}
-=======
 iframe{
   border: 2px white dotted;
 }
->>>>>>> 420e5e9217472c35cd161d9f60d716eb13dec8d1
+.container .jumbotron {
+  border-radius: 60px ;
+  background-color: #78617a;
+}
