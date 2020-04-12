@@ -1,12 +1,13 @@
 <nav class="navbar">
-        <a class="navbar-brand" >Pandemic Portal</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              {{!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+  <a class="navbar-brand">Pandemic Portal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        {{!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
@@ -16,23 +17,36 @@
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> --}}
-          </li>
-          </ul>
-        </div>
-      </nav>     
+      </li>
+    </ul>
+  </div>
+</nav>
 
+<img src="https://www.cdc.gov/handwashing/images/GettyImages-514363103-medium.jpg" width="200" height="200"
+  alt="Im a bannan">
+<img src="https://www.mydoorsign.com/img/lg/S/wash-hands-sign-s-5625.png" width="200" height="200" alt="Im a bannan">
+<img src="https://benefitsbridge.unitedconcordia.com/wp-content/uploads/2017/09/washingofhandswithsoapun_471045.jpg"
+  width="200" height="200">
+<img src="https://www.mydoorsign.com/img/lg/S/wash-hands-sign-s-5625.png" width="200" height="200" alt="Im a bannan">
+<img src=" https://www.rd.com/wp-content/uploads/2019/04/wash-hands.jpg" width="200" height="200">
 
+<img src="https://www.mydoorsign.com/img/lg/S/wash-hands-sign-s-5625.png" width="200" height="200" alt="Im a bannan">
+<img src="https://benefitsbridge.unitedconcordia.com/wp-content/uploads/2017/09/washingofhandswithsoapun_471045.jpg"
+  width="200" height="200">
+<img src="https://www.mydoorsign.com/img/lg/S/wash-hands-sign-s-5625.png" width="200" height="200" alt="Im a bannan">
+<img src="https://www.cdc.gov/handwashing/images/GettyImages-514363103-medium.jpg" width="200" height="200"
+  alt="Im a bannan">
 <div id="home">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>  
-        <div class="jumbotron jumbotron-fluid " >
+        <h1>{{msg}}</h1>
+        <div class="jumbotron jumbotron-fluid ">
           <div class="container">
             <h2 class="display-4">Pandemic portal</h2>
             {{!-- <p class="lead">it sucks...</p> --}}
           </div>
-        {{!-- <div class="text-box">
+          {{!-- <div class="text-box">
           <form class="clearfix mb-4" action="POST">
             <div class="form-group">
               <label for="example-text">Example Text</label>
@@ -47,51 +61,53 @@
             <button id="submit" class="btn btn-primary float-right">Submit</button>
           </form>
         </div> --}}
-        <div class="box-1">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+          <div class="box-1">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <iframe width="450" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            title="2019-nCoV"
+            src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light">
+          </iframe>
+          {{!-- {{ The above module was created by John's hopkins university. For more information please visit the following address: https://coronavirus.jhu.edu/map.html}} --}}
+          {{!-- <h3>Examples:</h3> --}}
+         
+          <div class="box-2">
+
+            <ul id="example-list" class="list-group" style="width: 500px; height: 500px; overflow: auto">
+              {{#each examples}}
+              <li data-id="{{this.id}}" class="list-group-item">
+                <a href="example/{{this.id}}">{{this.text}}</a>
+                <button class="btn btn-danger float-right delete">ｘ</button>
+              </li>
+              {{/each}}
+              <ul id="example-list" class="list-group">
+                {{#each articles}}
+                <li data-id="{{this.title}}" class="list-group-item">
+                  <a href="{{this.url}}">{{this.title}}</a>
+                  <button class="btn btn-danger float-right delete">ｘ</button>
+                </li>
+                {{/each}}
+              </ul>
+          </div>
         </div>
-
-        <iframe width="450" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-          title="2019-nCoV"
-          src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light">
-        </iframe>
-        {{!-- {{ The above module was created by John's hopkins university. For more information please visit the following address: https://coronavirus.jhu.edu/map.html}} --}}
-        {{!-- <h3>Examples:</h3> --}}
-      <div class="box-2">
-
-       <ul id="example-list" class="list-group" style="width: 500px; height: 500px; overflow: auto">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-          <ul id="example-list" class="list-group">
-          {{#each articles}}
-          <li data-id="{{this.title}}" class="list-group-item">
-            <a href="{{this.url}}">{{this.title}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul> 
-      </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
