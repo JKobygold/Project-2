@@ -1,6 +1,7 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+const bodyparser = require("body-parser");
 var db = require("./models");
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -24,8 +25,6 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 var syncOptions = { force: false };
-
-
 
 
 // If running a test, set syncOptions.force to true
