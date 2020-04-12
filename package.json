@@ -13,8 +13,13 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "axios": "^0.19.2",
+<<<<<<< HEAD
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
+=======
+    "covid19-api": "^1.1.9",
+    "dotenv": "^8.0.0",
+>>>>>>> f74cb2527e1571715a89565d1826953d92ff6e21
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "handlebars": "^4.7.6",
