@@ -18,8 +18,8 @@
 
 <ul>
   {{#each pplanner}}
-    {{#unless cabin-fever}}
-      {{> pplanner/cozy-block cabin-fever=true}}
+    {{#unless cabinfever}}
+      {{> pplanner/cozyblock cabinfever=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -29,8 +29,8 @@
 <ul>
   {{#each cats}}
     {{#if sleepy}}
-      {{> pplanner/cat-block cabin-fever=false}}  
-      {{!-- change cat-block to js variable --}}
+      {{> pplanner/catblock cabinfever=false}}  
+      {{!-- change catblock to js variable --}}
     {{/if}}
   {{/each}}
 </ul>
