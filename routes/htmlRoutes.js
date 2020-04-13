@@ -26,9 +26,10 @@ module.exports = function(app) {
     });
   });
 
-  app.get('/users', function(req, res) {
-    res.sendFile(path.join(__dirname + 'public/html/users.html'));
-});
+//   app.get('/users', function(req, res) {
+//     res.sendFile(path.join(__dirname + 'public/html/users.html'));
+// });
+
 
 
     

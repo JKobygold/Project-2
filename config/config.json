@@ -12,7 +12,7 @@
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
-    "logging": false
+    "logging": true
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",

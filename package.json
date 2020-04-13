@@ -23,6 +23,7 @@
     "mysql2": "^1.6.5",
     "sequelize": "^5.8.6",
     "sql": "^0.78.0",
+    "walmart": "0.0.4",
     "whole-foods-store-scraper": "^1.0.0"
   },
   "devDependencies": {
