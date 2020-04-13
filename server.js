@@ -1,7 +1,7 @@
 require("dotenv").config();
 var express = require("express"); //Import express
 var exphbs = require("express-handlebars"); //Import handlebars
-const bodyparser = require("body-parser"); //maybe delete this
+// const bodyparser = require("body-parser"); //maybe delete this
 var db = require("./models"); // Import Database/db logic via models folder
 var app = express(); 
 var PORT = process.env.PORT || 8080;
