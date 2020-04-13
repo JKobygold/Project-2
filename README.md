@@ -8,7 +8,7 @@
   * Matthew
 
 
-* Our Pandemic Portal will let you log in and view content related to our current epidemic 
+## Our Pandemic Portal will let you log in and view content related to our current epidemic 
 
 ### Overall Concept
 Organizing search process for informative content during the Covid19 Pandemic   
@@ -52,9 +52,10 @@ Organizing search process for informative content during the Covid19 Pandemic
 
 ##### future releases
 * as this is a group project there are items and nice-to-haves that were ultimately left off.  
-    1) including trending items on a big box store, we tried to get keys to various stores such as Walmart, Best-Buy, and Target but were unable to.
+    1) Trending items on a big box store, we tried to get APIkeys to various stores such as Walmart, Best-Buy, and Target but were unable to, perhaps related to the current events.
     
-    2)
-    
+    2) The EmailAuthProvider configured to require the user to enter a display name (defaults to true).
 
-    3) calm audio playlist that is user controlled.
+    3) The EmailAuthProvider configured to allow user cross device sign-in, and enable OAuth.
+
+    4) calm audio playlist that is user controlled.
