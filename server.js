@@ -1,9 +1,9 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
-const bodyparser = require("body-parser");
 var db = require("./models");
 var app = express();
+var path = require("path");
 var PORT = process.env.PORT || 3080;
 
 // Middleware
@@ -11,7 +11,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
-// Handlebars
+
+//Handlebars
 app.engine(
   "handlebars",
   exphbs({
@@ -27,6 +28,9 @@ require("./routes/htmlRoutes")(app);
 var syncOptions = { force: false }; 
 
 
+// require("./public/html/index.html")(app);
+
+
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {
@@ -36,6 +40,17 @@ db.sequelize.sync(syncOptions).then(function() {
       PORT
     );
   });
+});
+
+
+
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(function (req, res) {
+  res.setHeader('Content-Type', 'text/plain');
+  res.write('you posted:\n');
+  res.end(JSON.stringify(req.body, null, 2));
 });
 
 module.exports = app;
