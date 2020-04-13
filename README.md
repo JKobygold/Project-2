@@ -1,9 +1,10 @@
  Pandemic Portal
 
 Collaborators:
-  * Ben
-  * Beverly
-  * Matthew
+  * Jacob: What up. You're on my profile
+  * Ben: https://github.com/benmulhollandpsl
+  * Beverly : https://github.com/beverlynicolethomas
+  * Matthew: https://github.com/MatthewGlobosits
 
 
 ## Our Pandemic Portal will let you log in and view content related to our current epidemic 
