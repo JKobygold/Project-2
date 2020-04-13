@@ -26,10 +26,9 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/index", function (req, res) {
-    console.log("yo");
-  });
-
+//   app.get('/users', function(req, res) {
+//     res.sendFile(path.join(__dirname + 'public/html/users.html'));
+// });
 
 
 
