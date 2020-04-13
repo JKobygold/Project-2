@@ -1,10 +1,8 @@
-# Project-2 Pandemic Portal
+ Pandemic Portal
 
-#Group 2
-
+Collaborators:
   * Ben
   * Beverly
-  * Jacob
   * Matthew
 
 
