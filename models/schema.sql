@@ -1,20 +1,12 @@
--- DROP DATABASE IF EXISTS Exampledb;
--- CREATE DATABASE Exampledb;
+DROP DATABASE IF EXISTS pandemic;
+CREATE DATABASE pandemic;
+USE pandemic;
 
+CREATE TABLE `covid` (
+  `id` Int( 100 ) AUTO_INCREMENT NOT NULL,
+  `author` VARCHAR( 255) NOT NULL,
+  `body` VARCHAR( 255 ) NOT NULL,
+  `created_at` DATETIME NOT NULL,
 
--- CREATE DATABASE testdb;
-
--- ### Schema
-
-
-DROP DATABASE IF EXISTS Pandemicplannerdb;
-CREATE DATABASE Pandemicplannerdb;
-USE Pandemicplannerdb;
-
-CREATE TABLE pplanner
-(
-	id int NOT NULL AUTO_INCREMENT,
-	name varchar(255) NOT NULL,
-	cabinfever BOOLEAN DEFAULT false,
-	PRIMARY KEY (id)
+  PRIMARY KEY ( `id` ) 
 );
