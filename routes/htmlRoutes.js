@@ -1,6 +1,8 @@
 var db = require("../models");
 const axios = require('axios');
+var path = require("path");
 
+// function for api from new york times
 async function getNyTimesTopStories() {
   try {
     const response = await axios.get("https://api.nytimes.com/svc/topstories/v2/world.json?api-key=EFrSMOkn5IJ3i2V2bk1irq3plcwbIgae");
@@ -12,8 +14,11 @@ async function getNyTimesTopStories() {
 
 
 
+
 module.exports = function(app) {
   // Load index page
+
+
   app.get("/", async function(req, res) {
     var nyt = await getNyTimesTopStories();
     console.log(nyt);
@@ -26,10 +31,10 @@ module.exports = function(app) {
     });
   });
 
-//   app.get('/users', function(req, res) {
-//     res.sendFile(path.join(__dirname + 'public/html/users.html'));
-// });
 
+  app.get('/users', function(req, res) {
+      res.sendFile(path.join(__dirname + '/../public/html/users.html'));
+});
 
 
     
@@ -47,3 +52,4 @@ module.exports = function(app) {
     res.render("404");
   });
 };
+
