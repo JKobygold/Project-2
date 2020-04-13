@@ -40,7 +40,6 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 module.exports = db;
 
-
 // var users= [
 // {"id":1,"da":"1","ding":"dong1","ling":"long"},
 // {"id":2,"da":"2","ding":"dong2","ling":"long"},
