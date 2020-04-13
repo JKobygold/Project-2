@@ -1,10 +1,8 @@
-# Project-2 Pandemic Portal
+ Pandemic Portal
 
-#Group 2
-
+Collaborators:
   * Ben
   * Beverly
-  * Jacob
   * Matthew
 
 
@@ -59,3 +57,5 @@ Organizing search process for informative content during the Covid19 Pandemic
     3) The EmailAuthProvider configured to allow user cross device sign-in, and enable OAuth.
 
     4) calm audio playlist that is user controlled.
+
+
