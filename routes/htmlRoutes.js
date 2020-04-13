@@ -26,8 +26,11 @@ module.exports = function(app) {
     });
   });
 
-app.get("/another", function(req,res) {
-  res.send("index");
+
+  app.get("/main", function(req, res) {
+    res.render("main", {
+      body: what
+    });
   });
 
 
