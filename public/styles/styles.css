@@ -3,6 +3,10 @@
   color: white;
 }
 
+.container{
+  color: black;
+}
+
 #home{
   background-color:#2a2b2e;
 }
@@ -35,8 +39,9 @@ h2{
 
 }
 .text-box{
-  margin-bottom: 10px;
-  margin-left: 80px;
+  margin-bottom: 20px;
+  color:green;
+  margin-left: 220px;
   border: 2px white dotted;
   padding-top: 15px;
   padding-right: 15px;

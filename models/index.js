@@ -39,3 +39,13 @@ Object.keys(db).forEach(function(modelName) {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 module.exports = db;
+
+
+// var users= [
+// {"id":1,"da":"1","ding":"dong1","ling":"long"},
+// {"id":2,"da":"2","ding":"dong2","ling":"long"},
+// {"id":3,"da":"3","ding":"dong3","ling":"long"},
+// {"id":4,"da":"4","ding":"dong4","ling":"long"},
+// {"id":5,"ba":"5","ding":"sheep5","have you any":"wool"},
+// {"yes":6 ,"no":"6"}
+// ];
