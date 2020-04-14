@@ -9,6 +9,11 @@ const bcrypt = require("bcryptjs");
 const passport = require("passport");
 const db = require("../models");
 
+var firebase = require('firebase');
+var firebaseui = require('firebaseui');
+var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+
 // User Login Page Route
 router.get("/login", (req, res) => {
 	res.render("users/login");

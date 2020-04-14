@@ -41,6 +41,7 @@ Organizing search process for informative content during the Covid19 Pandemic
   "passport-local" npm package
   "sequelize": "^4.41.2"
   "New York Times" api
+  "Bower" --not anymore
     will update as more are used and removed
 ```
 
