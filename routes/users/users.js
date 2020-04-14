@@ -6,7 +6,6 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
-const passport = require("passport");
 const db = require("../models");
 
 var firebase = require('firebase');
@@ -14,6 +13,8 @@ var firebaseui = require('firebaseui');
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 
+
+//this is from attempted use of passport, will try to use for firebaseUI
 // User Login Page Route
 router.get("/login", (req, res) => {
 	res.render("users/login");
@@ -28,7 +29,7 @@ router.get("/logout", (req, res) => {
 
 // User Login Form Post Route
 router.post("/login", (req, res, next) => {
-	passport.authenticate("local", {
+	firebaseui.authenticate("local", {
 		successRedirect: "/users/index",
 		failureRedirect: "/users/login",
 		failureFlash: true
