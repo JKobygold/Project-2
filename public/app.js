@@ -30,10 +30,26 @@ btnLogin.addEventListener('click', e => {
     const auth = firebase.auth();
     // Sign in
     const promise = auth.signInWithEmailAndPassword(email, pass);
-    promise.catch(e => console.log(e.message));
+    promise
+        .catch(e => console.log(e.message));
 
 });
 
+btnLogout.addEventListener('click', e =>{
+    firebase.auth().signOut();
+});
+
+//add a realtime listener
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if(firebaseUser) {
+        console.log(firebaseUser);
+        btnLogout.classList.remove('hide');
+    }else{
+        console.log('not logged in');
+        btnLogout.classList.add('hide');
+    }
+
+});
 
 // add signup event
 btnSignUp.addEventListener('click', e => {
@@ -58,6 +74,13 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     }
 
 })
+
+//Handle Account Status
+firebase.auth().onAuthStateChanged(user => {
+    if(user) {
+      window.location = 'views/user.handlebars'; //After successful login, user will be redirected to user.html
+    }
+
 
 
 
