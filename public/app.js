@@ -79,7 +79,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 firebase.auth().onAuthStateChanged(user => {
     if(user) {
       window.location = 'views/user.handlebars'; //After successful login, user will be redirected to user.html
-    }
+    }});
 
 
 
@@ -273,4 +273,3 @@ firebase.auth().onAuthStateChanged(user => {
 //         // Common errors could be invalid email and invalid or expired OTPs.
 //       });
 //   }
-  
