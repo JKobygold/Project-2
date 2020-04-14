@@ -33,7 +33,11 @@ module.exports = function(app) {
 
 
   app.get('/users', function(req, res) {
-      res.sendFile(path.join(__dirname + '/../public/html/users.html'));
+      res.sendFile(path.join(__dirname , "../public/assets/user.html"));
+});
+
+app.get('/info', function(req, res) {
+  res.sendFile(path.join(__dirname , "../public/assets/info.html"));
 });
 
 
