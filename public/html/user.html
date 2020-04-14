@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>User Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="navbar-brand">Pandemic Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="jumbotron jumbotron-fluid ">
+                    <div class="container">
+                        <h2 class="display-4">Pandemic portal</h2>
+                    </div>
+
+
+
+                    <div class="todo">
+                        <h1>During Quarintine keep yourself occupided with an activities list</h1>
+
+                        <!-- Input Form -->
+                        <form>
+                            <span id="todo-item">Your fun activities: <input id="to-do" type="text"><input id="add-to-do"
+                                    value="Add to list" type="submit"></span>
+                        </form>
+
+                        <hr>
+
+                        <!-- To-Do List -->
+                        <div id="to-dos"></div>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                        <script type="text/javascript">
+                            function renderTodos(list) {
+                                $("#to-dos").empty();
+                                for (var i = 0; i < list.length; i++) {
+                                    var toDoItem = $("<p>");
+                                    toDoItem.text(list[i]);
+                                    var toDoClose = $("<button>");
+                                    toDoClose.attr("data-to-do", i);
+                                    toDoClose.addClass("checkbox");
+                                    toDoClose.text("✓");
+                                    toDoItem = toDoItem.prepend(toDoClose);
+                                    $("#to-dos").append(toDoItem);
+                                }
+                            }
+
+                            $("#add-to-do").on("click", function (event) {
+                                event.preventDefault();
+                                var toDoTask = $("#to-do").val().trim();
+                                list.push(toDoTask);
+                                renderTodos(list);
+                                localStorage.setItem("todolist", JSON.stringify(list));
+                                $("#to-do").val("");
+                            });
+                            $(document).on("click", ".checkbox", function () {
+                                var toDoNumber = $(this).attr("data-to-do");
+                                list.splice(toDoNumber, 1);
+                                renderTodos(list);
+                                localStorage.setItem("todolist", JSON.stringify(list));
+                            });
+                            var list = JSON.parse(localStorage.getItem("todolist"));
+                            if (!Array.isArray(list)) {
+                                list = [];
+                            }
+                            renderTodos(list);
+                        </script>
+
+                    </div>
