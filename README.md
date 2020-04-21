@@ -1,7 +1,7 @@
  Pandemic Portal
 
 Collaborators:
-  * Jacob: 
+  * Jacob: https://github.com/JKobygold
   * Ben: https://github.com/benmulhollandpsl
   * Beverly : https://github.com/beverlynicolethomas
   * Matthew: https://github.com/MatthewGlobosits
