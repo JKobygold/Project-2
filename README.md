@@ -1,7 +1,7 @@
  Pandemic Portal
 
 Collaborators:
-  * Jacob: What up. You're on my profile
+  * Jacob: 
   * Ben: https://github.com/benmulhollandpsl
   * Beverly : https://github.com/beverlynicolethomas
   * Matthew: https://github.com/MatthewGlobosits
